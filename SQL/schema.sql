@@ -59,13 +59,3 @@ ALTER TABLE `messages` ADD FOREIGN KEY (user_id) REFERENCES `users` (`user_id`);
 ALTER TABLE `rooms` ADD FOREIGN KEY (message_id) REFERENCES `messages` (`message_id`);
 ALTER TABLE `users` ADD FOREIGN KEY (room_id) REFERENCES `rooms` (`room_id`);
 
-
-
-
-
-
-
-/*  Execute this file from the command line by typing:
- *    mysql < schema.sql
- *  to create the database and the tables.*/
-
